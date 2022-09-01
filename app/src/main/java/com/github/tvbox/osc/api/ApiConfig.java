@@ -79,7 +79,8 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitea.com/happy520/jialidianshiziyong/raw/branch/main/pachong/配置地址/wuaipachong.json
+");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
